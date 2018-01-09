@@ -1,0 +1,45 @@
+﻿@{
+    ViewBag.Title = "About My Skills";
+}
+<h2>@ViewBag.Title</h2>
+
+<div class="row">
+    <div class="col-md-8 ">
+        <h2>CSS/HTML</h2>
+        <p>CSS and HTML often intermingle, using both in tandem is a huge skill.</p>
+
+        <table class="table-bordered">
+            <thead class="label text-capitalize text-primary">Table of data</thead>
+            <tbody>
+                <tr>
+                    <td class="col-md-4">CSS use</td>
+                    <td class="text-danger col-md-8">Generally done to style a page in a specific fashion, such as with colors or fonts, as shown here.</td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">HTML</td>
+                    <td class="text-info col-md-8">HTML is more about the structures in the front end code itself, such as this table that contains these explainations, or the large header above.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Javascript</h2>
+
+        <div id="javabutton" class="btn-primary col-md-4">Javascript</div>
+        <div id="javascripttext" class="text-success col-md-8" style="display:none">
+            Javascript can control things on a page, such as animating this opening and closing,
+            or doing math and background work when filling in input boxes.
+        </div>
+    </div>
+
+</div>
+
+<script src="~/Scripts/jquery-3.2.1.min.js"></script>
+<script>
+    $(document).ready(function () {
+
+        $('#javabutton').click(function () {
+            $('#javascripttext').toggle("fast");
+        });
+
+    });
+</script>
